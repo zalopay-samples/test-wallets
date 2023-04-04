@@ -1,4 +1,4 @@
-# ZaloPay app for iOS
+# iOS app
 
 ## Installation
 
