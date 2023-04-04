@@ -9,12 +9,12 @@ This repository contains ZaloPay pre-built binaries for mobile platforms
 Click/tap on the following button to install
 
 <a href="itms-services://?action=download-manifest&amp;url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/manifest.plist">
-  <img src="https://img.shields.io/badge/-for%20iOS-blue?style=flat-square&logo=apple" height="40" />
+  <img src="https://img.shields.io/badge/-for%20iOS-gray?style=flat-square&logo=apple" height="40" />
 </a>
 
 <br />
 <a href="https://github.com/zalopay-samples/test-wallets/raw/main/android/zalopay-7.20.0.apk">
-<img src="https://img.shields.io/badge/-for%20Android-green?style=flat-square&logo=apple" height="40" />
+<img src="https://img.shields.io/badge/-for%20Android-blue?style=flat-square&logo=android&logoColor=white" height="40" />
 </a>
 
 <br />
