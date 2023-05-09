@@ -1,5 +1,12 @@
 # Test wallets
 
+- [Test wallets](#test-wallets)
+  - [Overview](#overview)
+  - [Installation](#installation)
+  - [Registration](#registration)
+  - [Deposit](#deposit)
+
+
 ## Overview
 
 This repository contains ZaloPay pre-built binaries for mobile platforms
@@ -8,20 +15,52 @@ This repository contains ZaloPay pre-built binaries for mobile platforms
 
 Click/tap on the following button to install
 
-<a href="itms-services://?action=download-manifest&amp;url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/manifest.plist">
-  <img src="https://img.shields.io/badge/-for%20iOS-gray?style=flat-square&logo=apple" height="40" />
-</a>
+<p align="center">
+  <br />
+  <a href="itms-services://?action=download-manifest&amp;url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/manifest.plist">
+    <img src="https://img.shields.io/badge/-for%20iOS-gray?style=flat-square&logo=apple" height="40" />
+  </a>
+</p>
 
-<br />
-<a href="https://github.com/zalopay-samples/test-wallets/raw/main/android/zalopay-7.20.0.apk">
-<img src="https://img.shields.io/badge/-for%20Android-blue?style=flat-square&logo=android&logoColor=white" height="40" />
-</a>
+<p align="center">
+  <br />
+  <a href="https://github.com/zalopay-samples/test-wallets/raw/main/android/zalopay-7.20.0.apk">
+  <img src="https://img.shields.io/badge/-for%20Android-blue?style=flat-square&logo=android&logoColor=white" height="40" />
+  </a>
+  <br />
+</p>
 
-<br />
+For iOS, once the installation is successful, you should trust ZaloPay app via settings in  `Device Management`
 
-## Binaries
+<p align="center">
+  <img src="images/usage/ios-trust.png" width="240" />
+</p>
 
-| Path                       | Signature                                                        |
-| -------------------------- | ---------------------------------------------------------------- |
-| android/zalopay-7.20.0.apk | afc705beb84a7acb98896b31c57a084c8cd0388eb5f33fd7e914b7c9b56f5b37 |
-| ios/zalopay-7.23.0.ipa     | 559b0e4c87717654657326157f197c86b81cda2866f4a2dd47b31c44902c1a1d |
+Please consult [Install custom enterprise apps on iOS](https://support.apple.com/en-us/HT204460) for more information.
+
+
+## Registration
+
+**Step 1**: Open the ZaloPay app and log in using your Zalo account or mobile number.
+
+Note: One phone number can only be linked to a single ZaloPay sandbox account.
+
+<p align="center">
+  <img src="images/usage/step-01.png" width="360" />
+</p>
+
+**Step 2**: Enter the phone number and continue
+
+<p align="center">
+  <img src="images/usage/step-02.png" width="360" />
+</p>
+
+**Step 3**: Enter the verification code of `111111` and continue with password setup
+
+<p align="center">
+  <img src="images/usage/step-04.png" width="360" />
+</p>
+
+## Deposit
+
+tbd (please incorporate https://docs.zalopay.vn/en/v2/start/#A-II)
