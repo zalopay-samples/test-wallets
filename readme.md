@@ -1,5 +1,3 @@
-
-
 # Test wallets
 
 - [Test wallets](#test-wallets)
@@ -9,11 +7,9 @@
   - [Deposit](#deposit)
   - [Questions](#questions)
 
-
-
 ## Overview
 
-This repository contains ZaloPay pre-built binaries for mobile platforms
+This repository contains ZaloPay pre-built binaries for mobile platforms (iOs, Android)
 
 ## Installation
 
@@ -50,27 +46,31 @@ For iOS, once the installation is successful, you should trust ZaloPay app via s
 
 Please consult [Install custom enterprise apps on iOS](https://support.apple.com/en-us/HT204460) for more information.
 
-
 ## Registration
 
+<style>
+  .step {
+    background-color: transparent;
+  }
+</style>
 **Step 1**: Open the ZaloPay app and log in using your Zalo account or mobile number.
 
 Note: One phone number can only be linked to a single ZaloPay sandbox account.
 
 <p align="center">
-  <img src="images/usage/step-01.png" width="360" />
+  <img src="images/usage/step-01.png" width="360" class="step"/>
 </p>
 
 **Step 2**: Enter the phone number and continue
 
 <p align="center">
-  <img src="images/usage/step-02.png" width="360" />
+  <img src="images/usage/step-02.png" width="360" class="step"/>
 </p>
 
 **Step 3**: Enter the verification code of `111111` and continue with password setup
 
 <p align="center">
-  <img src="images/usage/step-03.png" width="360" />
+  <img src="images/usage/step-03.png" width="360" class="step"/>
 </p>
 
 <br/>
@@ -79,70 +79,63 @@ Note: One phone number can only be linked to a single ZaloPay sandbox account.
 
 To pay with ZaloPay Sandbox, you first have to deposit some money
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      body {
-        background-color: #f9f9f9;
-        font-family: Arial, sans-serif;
-      }
-      .container {
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      h1 {
-        font-size: 28px;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
-      form label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      form input[type="tel"] {
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        width: 95%;
-        margin-bottom: 20px;
-      }
-      .g-recaptcha {
-        margin-bottom: r120px;
-      }
-      form input[type="submit"] {
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 10px;
-        border: none;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-      }
-      form input[type="submit"]:hover {
-        background-color: #0062cc;
-      }
-    </style>
-  </head>
-  <body>
-    <br />
-    <div class="container">
-      <form method="get" action="https://zlpdev-mi-zlpdemo.zalopay.vn/zlp-demo/api/cashin">
-        <label for="phone">Enter the registered phone number:</label>
-        <input type="tel" id="phone" name="phone" maxlength="15" pattern="[0-9]+" required>
-        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
-        <input type="submit" value="Submit">
-      </form>
-      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    </div>
-    <br />
-  </body>
-</html>
+<style>
+  body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  form input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .g-recaptcha {
+    margin-bottom: r120px;
+  }
+  form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  form input[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+</style>
+<br />
+<div class="container">
+  <form method="get" action="https://zlpdev-mi-zlpdemo.zalopay.vn/zlp-demo/api/cashin">
+    <label for="phone">Enter the registered phone number</label>
+    <input type="tel" id="phone" name="phone" maxlength="15" pattern="[0-9]+" required>
+    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+    <input type="submit" value="Submit">
+  </form>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</div>
+<br />
 
 ## Questions
 
