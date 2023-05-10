@@ -127,14 +127,40 @@ To pay with ZaloPay Sandbox, you first have to deposit some money
 </style>
 <br />
 <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+
 <div class="container">
-  <form method="get" action="https://zlpdev-mi-zlpdemo.zalopay.vn/zlp-demo/api/cashin">
+  <form id="deposit-form" method="get" action="https://zlpdev-mi-zlpdemo.zalopay.vn/zlp-demo/api/cashin">
     <label for="phone">Enter the registered phone number</label>
     <input type="tel" id="phone" name="phone" maxlength="15" pattern="[0-9]+" required>
     <div class="g-recaptcha" data-sitekey="6Ld-6_glAAAAAJfZe6R7vAg_vqvk7BtvVHH0_eKo"></div>
     <input type="submit" value="Submit">
   </form>
 </div>
+<script>
+  // Get the form element
+const form = document.querySelector('#deposit-form');
+const phoneInput = document.querySelector('#phone');
+
+// Add an event listener to the form's submit event
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent the form from submitting normally
+  
+  // Get the form data
+  const formData = new FormData(form);
+  const phone= encodeURIComponent(phoneInput.value);
+  const api = `https://zlpdev-mi-zlpdemo.zalopay.vn/zlp-demo/api/cashin?phone=${phone}`;
+  
+  console.log("Invoking Deposit API...");
+  // Make a POST request to the API
+  fetch(api, {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    console.log(response);
+  });
+});
+</script>
 <br />
 
 ## Questions
