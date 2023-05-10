@@ -1,4 +1,15 @@
+
+
 # Test wallets
+
+- [Test wallets](#test-wallets)
+  - [Overview](#overview)
+  - [Installation](#installation)
+  - [Registration](#registration)
+  - [Deposit](#deposit)
+  - [Questions](#questions)
+
+
 
 ## Overview
 
@@ -8,20 +19,131 @@ This repository contains ZaloPay pre-built binaries for mobile platforms
 
 Click/tap on the following button to install
 
-<a href="itms-services://?action=download-manifest&amp;url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/manifest.plist">
-  <img src="https://img.shields.io/badge/-for%20iOS-gray?style=flat-square&logo=apple" height="40" />
-</a>
+<style>
+  .cta {
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+</style>
 
 <br />
-<a href="https://github.com/zalopay-samples/test-wallets/raw/main/android/zalopay-7.20.0.apk">
-<img src="https://img.shields.io/badge/-for%20Android-blue?style=flat-square&logo=android&logoColor=white" height="40" />
-</a>
-
+<p align="center">
+  <a href="itms-services://?action=download-manifest&amp;url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/manifest.plist">
+    <img src="https://img.shields.io/badge/-for%20iOS-gray?style=flat-square&logo=apple" height="60" class="cta" />
+  </a>
+</p>
+<p align="center">
+  <br />
+  <a href="https://github.com/zalopay-samples/test-wallets/raw/main/android/zalopay-7.20.0.apk">
+  <img src="https://img.shields.io/badge/-for%20Android-blue?style=flat-square&logo=android&logoColor=white" height="60" class="cta" />
+  </a>
+</p>
 <br />
 
-## Binaries
+For iOS, once the installation is successful, you should trust ZaloPay app via settings in  `Device Management`
 
-| Path                       | Signature                                                        |
-| -------------------------- | ---------------------------------------------------------------- |
-| android/zalopay-7.20.0.apk | afc705beb84a7acb98896b31c57a084c8cd0388eb5f33fd7e914b7c9b56f5b37 |
-| ios/zalopay-7.23.0.ipa     | 559b0e4c87717654657326157f197c86b81cda2866f4a2dd47b31c44902c1a1d |
+<p align="center">
+  <img src="images/usage/ios-trust.png" width="240" />
+</p>
+
+Please consult [Install custom enterprise apps on iOS](https://support.apple.com/en-us/HT204460) for more information.
+
+
+## Registration
+
+**Step 1**: Open the ZaloPay app and log in using your Zalo account or mobile number.
+
+Note: One phone number can only be linked to a single ZaloPay sandbox account.
+
+<p align="center">
+  <img src="images/usage/step-01.png" width="360" />
+</p>
+
+**Step 2**: Enter the phone number and continue
+
+<p align="center">
+  <img src="images/usage/step-02.png" width="360" />
+</p>
+
+**Step 3**: Enter the verification code of `111111` and continue with password setup
+
+<p align="center">
+  <img src="images/usage/step-03.png" width="360" />
+</p>
+
+<br/>
+
+## Deposit
+
+To pay with ZaloPay Sandbox, you first have to deposit some money
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #f9f9f9;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      form label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      form input[type="tel"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        width: 95%;
+        margin-bottom: 20px;
+      }
+      .g-recaptcha {
+        margin-bottom: r120px;
+      }
+      form input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      form input[type="submit"]:hover {
+        background-color: #0062cc;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <div class="container">
+      <form method="get" action="https://zlpdev-mi-zlpdemo.zalopay.vn/zlp-demo/api/cashin">
+        <label for="phone">Enter the registered phone number:</label>
+        <input type="tel" id="phone" name="phone" maxlength="15" pattern="[0-9]+" required>
+        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+        <input type="submit" value="Submit">
+      </form>
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </div>
+    <br />
+  </body>
+</html>
+
+## Questions
+
+If you have any question, feel free to [discuss](https://github.com/zalopay-samples/test-wallets/discussions)
