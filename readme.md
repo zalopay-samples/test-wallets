@@ -50,7 +50,7 @@ Please consult [Install custom enterprise apps on iOS](https://support.apple.com
 
 <style>
   .step {
-    background-color: transparent;
+    background-color: transparent !important;
   }
 </style>
 **Step 1**: Open the ZaloPay app and log in using your Zalo account or mobile number.
@@ -130,7 +130,7 @@ To pay with ZaloPay Sandbox, you first have to deposit some money
   <form method="get" action="https://zlpdev-mi-zlpdemo.zalopay.vn/zlp-demo/api/cashin">
     <label for="phone">Enter the registered phone number</label>
     <input type="tel" id="phone" name="phone" maxlength="15" pattern="[0-9]+" required>
-    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+    <div class="g-recaptcha" data-sitekey="6Leii_glAAAAAOQKbY4LZEtwxitRiXFbNzvZgkJA"></div>
     <input type="submit" value="Submit">
   </form>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
