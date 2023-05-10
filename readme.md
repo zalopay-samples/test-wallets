@@ -126,19 +126,12 @@ To pay with ZaloPay Sandbox, you first have to deposit some money
   }
 </style>
 <br />
-<script src="https://www.google.com/recaptcha/enterprise.js?render=6Leii_glAAAAAOQKbY4LZEtwxitRiXFbNzvZgkJA"></script>
-<script>
-grecaptcha.enterprise.ready(function() {
-    grecaptcha.enterprise.execute('6Leii_glAAAAAOQKbY4LZEtwxitRiXFbNzvZgkJA', {action: 'login'}).then(function(token) {
-       // tbd
-    });
-});
-</script>
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
 <div class="container">
   <form method="get" action="https://zlpdev-mi-zlpdemo.zalopay.vn/zlp-demo/api/cashin">
     <label for="phone">Enter the registered phone number</label>
     <input type="tel" id="phone" name="phone" maxlength="15" pattern="[0-9]+" required>
-    <div class="g-recaptcha" data-sitekey="6Leii_glAAAAAOQKbY4LZEtwxitRiXFbNzvZgkJA"></div>
+    <div class="g-recaptcha" data-sitekey="6Ld-6_glAAAAAJfZe6R7vAg_vqvk7BtvVHH0_eKo"></div>
     <input type="submit" value="Submit">
   </form>
 </div>
