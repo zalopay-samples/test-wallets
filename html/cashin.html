@@ -77,7 +77,15 @@
       body: formData
     })
     .then(response => {
+      console.log("> Successful");
       console.log(response);
+      alert("Successfully deposit. Please check your account in ZaloPay Sandbox application.")
+    })
+    .catch(error => {
+      console.log("> Error");
+      console.error(error);
+      alert("Something went wrong. Please check the console log.")
+      // Handle errors
     });
   });
 </script>
