@@ -132,7 +132,7 @@ To pay with ZaloPay Sandbox, you first have to deposit some money
   <form id="deposit-form" method="get" action="https://zlpdev-mi-zlpdemo.zalopay.vn/zlp-demo/api/cashin">
     <label for="phone">Enter the registered phone number</label>
     <input type="tel" id="phone" name="phone" maxlength="15" pattern="[0-9]+" required>
-    <div class="g-recaptcha" data-sitekey="6Ld-6_glAAAAAJfZe6R7vAg_vqvk7BtvVHH0_eKo" data-callback="enableSubmitBtn"/>
+    <div class="g-recaptcha" data-sitekey="6Ld-6_glAAAAAJfZe6R7vAg_vqvk7BtvVHH0_eKo" data-callback="enableSubmitBtn"></div>
     <input type="submit" value="Submit" id="btnSubmit" disabled="disabled">
   </form>
 </div>
