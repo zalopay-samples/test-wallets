@@ -15,28 +15,9 @@ This repository contains ZaloPay pre-built binaries for mobile platforms (iOs, A
 
 Click/tap on the following button to install
 
-<style>
-  .cta {
-        border-radius: 10px;
-        border: none;
-        cursor: pointer;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-</style>
-
-<br />
-<p align="center">
-  <a href="itms-services://?action=download-manifest&amp;url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/manifest.plist">
-    <img src="https://img.shields.io/badge/-for%20iOS-gray?style=flat-square&logo=apple" height="60" class="cta" />
-  </a>
-</p>
-<p align="center">
-  <br />
-  <a href="https://github.com/zalopay-samples/test-wallets/raw/main/android/zalopay-7.20.0.apk">
-  <img src="https://img.shields.io/badge/-for%20Android-blue?style=flat-square&logo=android&logoColor=white" height="60" class="cta" />
-  </a>
-</p>
-<br />
+<iframe src="html/cta.html" width="100%" height="250px" style="background: transparent; border: none;">
+  <p>Your browser does not support iframes.</p>
+</iframe>
 
 For iOS, once the installation is successful, you should trust ZaloPay app via settings in  `Device Management`
 
@@ -79,89 +60,9 @@ Note: One phone number can only be linked to a single ZaloPay sandbox account.
 
 To pay with ZaloPay Sandbox, you first have to deposit some money
 
-<style>
-  body {
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-  }
-  .container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  h1 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  form input[type="tel"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 95%;
-    margin-bottom: 20px;
-  }
-  .g-recaptcha {
-    margin-bottom: 20px;
-  }
-  form input[type="submit"] {
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-</style>
-<br />
-<script src='https://www.google.com/recaptcha/api.js' async defer></script>
-
-<div class="container">
-  <form id="deposit-form" method="get" action="https://zlpdev-mi-zlpdemo.zalopay.vn/zlp-demo/api/cashin">
-    <label for="phone">Enter the registered phone number</label>
-    <input type="tel" id="phone" name="phone" maxlength="15" pattern="[0-9]+" required>
-    <div class="g-recaptcha" data-sitekey="6Ld-6_glAAAAAJfZe6R7vAg_vqvk7BtvVHH0_eKo" data-callback="enableSubmitBtn"></div>
-    <input type="submit" value="Submit" id="btnSubmit" disabled>
-  </form>
-</div>
-<script>
-  // Get the form element
-  const form = document.querySelector('#deposit-form');
-  const phoneInput = document.querySelector('#phone');
-
-  function enableSubmitBtn(){
-    document.getElementById("btnSubmit").disabled = false;
-  }
-
-  // Add an event listener to the form's submit event
-  form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent the form from submitting normally
-    
-    // Get the form data
-    const formData = new FormData(form);
-    const phone= encodeURIComponent(phoneInput.value);
-    const api = `https://zlpdev-mi-zlpdemo.zalopay.vn/zlp-demo/api/cashin?phone=${phone}`;
-    
-    console.log("Invoking Deposit API...");
-    // Make a POST request to the API
-    fetch(api, {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => {
-      console.log(response);
-    });
-  });
-</script>
-<br />
+<iframe src="html/cashin.html" width="100%" height="350px" style="background: transparent; border: none;">
+  <p>Your browser does not support iframes.</p>
+</iframe>
 
 ## Questions
 
