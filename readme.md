@@ -110,19 +110,15 @@ To pay with ZaloPay Sandbox, you first have to deposit some money
     margin-bottom: 20px;
   }
   .g-recaptcha {
-    margin-bottom: 120px;
+    margin-bottom: 20px;
   }
   form input[type="submit"] {
-    background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-  }
-  form input[type="submit"]:hover {
-    background-color: #0062cc;
   }
 </style>
 <br />
@@ -133,37 +129,37 @@ To pay with ZaloPay Sandbox, you first have to deposit some money
     <label for="phone">Enter the registered phone number</label>
     <input type="tel" id="phone" name="phone" maxlength="15" pattern="[0-9]+" required>
     <div class="g-recaptcha" data-sitekey="6Ld-6_glAAAAAJfZe6R7vAg_vqvk7BtvVHH0_eKo" data-callback="enableSubmitBtn"></div>
-    <input type="submit" value="Submit" id="btnSubmit" disabled="disabled">
+    <input type="submit" value="Submit" id="btnSubmit" disabled>
   </form>
 </div>
 <script>
   // Get the form element
-const form = document.querySelector('#deposit-form');
-const phoneInput = document.querySelector('#phone');
+  const form = document.querySelector('#deposit-form');
+  const phoneInput = document.querySelector('#phone');
 
-function enableSubmitBtn(){
-  document.getElementById("btnSubmit").disabled = false;
-}
+  function enableSubmitBtn(){
+    document.getElementById("btnSubmit").disabled = false;
+  }
 
-// Add an event listener to the form's submit event
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent the form from submitting normally
-  
-  // Get the form data
-  const formData = new FormData(form);
-  const phone= encodeURIComponent(phoneInput.value);
-  const api = `https://zlpdev-mi-zlpdemo.zalopay.vn/zlp-demo/api/cashin?phone=${phone}`;
-  
-  console.log("Invoking Deposit API...");
-  // Make a POST request to the API
-  fetch(api, {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => {
-    console.log(response);
+  // Add an event listener to the form's submit event
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent the form from submitting normally
+    
+    // Get the form data
+    const formData = new FormData(form);
+    const phone= encodeURIComponent(phoneInput.value);
+    const api = `https://zlpdev-mi-zlpdemo.zalopay.vn/zlp-demo/api/cashin?phone=${phone}`;
+    
+    console.log("Invoking Deposit API...");
+    // Make a POST request to the API
+    fetch(api, {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => {
+      console.log(response);
+    });
   });
-});
 </script>
 <br />
 
