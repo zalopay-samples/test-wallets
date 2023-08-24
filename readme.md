@@ -9,7 +9,7 @@
 
 ## Overview
 
-This repository contains ZaloPay pre-built binaries for mobile platforms (iOs, Android)
+This repository contains ZaloPay pre-built binaries for mobile platforms (iOS, Android)
 
 ## Installation
 
@@ -18,6 +18,13 @@ Click/tap on the following button to install
 <iframe src="html/cta.html" width="100%" height="250px" style="background: transparent; border: none;">
   <p>Your browser does not support iframes.</p>
 </iframe>
+
+Other downloads:
+
+| Platform | ZaloPay Version | Updated Date | Download URL |
+| -------- | --------------- | ------------ | ------------ |
+| iOS      | 7.23.0          | 03/10/2022   | [ZaloPay_iOS_7.23.0.apk](https://github.com/zalopay-samples/test-wallets/raw/main/ios/7.23.0/manifest-7.23.0.plist) |
+| Android  | 7.20.0          | 03/10/2022   | [ZaloPay_Android_7.20.0.apk](https://github.com/zalopay-samples/test-wallets/raw/main/android/ZaloPay_Android_7.20.0.apk) |
 
 For iOS, once the installation is successful, you should trust ZaloPay app via settings in  `Device Management`
 
