@@ -15,12 +15,14 @@ This repository contains ZaloPay pre-built binaries for mobile platforms (iOS, A
 
 Click/tap on the following button to install
 
+<!-->remove iframe because of limitation on downloading build on Safari<-->
 <style>
   .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
   .cta {
     border-radius: 10px;
@@ -46,12 +48,12 @@ Click/tap on the following button to install
     background-color: rgb(50, 222, 133);
   }
   .title {
-    margin: 0;
+    margin: 0 !important;
     font-size: 18px;
     font-weight: 500;
   }
   .subtitle {
-    margin: 0;
+    margin: 0 !important;
     font-size: 12px;
   }
 </style>
@@ -65,10 +67,11 @@ Click/tap on the following button to install
     >
       <div class="cta ios">
         <img
-          src="../images/icons/apple.svg"
+          src="./images/icons/apple.svg"
           width="32"
           height="32"
           style="margin-right: 8px"
+          alt="iOS Logo"
         />
         <div>
           <p class="title">8.25.0 Current</p>
@@ -84,10 +87,11 @@ Click/tap on the following button to install
     >
       <div class="cta android">
         <img
-          src="../images/icons/android.svg"
+          src="./images/icons/android.svg"
           width="32"
           height="32"
           style="margin-right: 8px"
+          alt="Android Logo"
         />
         <div>
           <p class="title">8.25.0 Current</p>
