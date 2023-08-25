@@ -56,6 +56,10 @@ Click/tap on the following button to install
     margin: 0 !important;
     font-size: 12px;
   }
+  img {
+    background-color: transparent !important;
+    margin-right: 8px !important;
+  }
 </style>
 
 <br />
@@ -70,7 +74,6 @@ Click/tap on the following button to install
           src="https://github.com/zalopay-samples/test-wallets/raw/main/images/icons/apple.svg"
           width="32"
           height="32"
-          style="margin-right: 8px"
           alt="iOS Logo"
         />
         <div>
@@ -90,7 +93,6 @@ Click/tap on the following button to install
           src="https://github.com/zalopay-samples/test-wallets/raw/main/images/icons/android.svg"
           width="32"
           height="32"
-          style="margin-right: 8px"
           alt="Android Logo"
         />
         <div>
