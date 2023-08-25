@@ -1,4 +1,10 @@
 <style>
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
   .cta {
     border-radius: 10px;
     border: none;
@@ -17,6 +23,7 @@
   }
   .ios {
     background-color: rgb(142, 142, 147);
+    margin-right: 16px;
   }
   .android {
     background-color: rgb(50, 222, 133);
@@ -33,43 +40,44 @@
 </style>
 
 <br />
-<div align="center">
-  <a
-    href="itms-services://?action=download-manifest&amp;url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/8.25.0/manifest-8.25.0.plist"
-    style="text-decoration: none"
-  >
-    <div class="cta ios">
-      <img
-        src="../images/icons/apple.svg"
-        width="32"
-        height="32"
-        style="margin-right: 8px"
-      />
-      <div>
-        <p class="title">8.25.0 Current</p>
-        <p class="subtitle">Latest Features</p>
+<div class="container">
+  <div align="center">
+    <a
+      href="itms-services://?action=download-manifest&url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/8.25.0/manifest-8.25.0.plist"
+      style="text-decoration: none"
+    >
+      <div class="cta ios">
+        <img
+          src="../images/icons/apple.svg"
+          width="32"
+          height="32"
+          style="margin-right: 8px"
+        />
+        <div>
+          <p class="title">8.25.0 Current</p>
+          <p class="subtitle">Latest Features</p>
+        </div>
       </div>
-    </div>
-  </a>
-</div>
-<div align="center">
-  <br />
-  <a
-    href="https://github.com/zalopay-samples/test-wallets/raw/main/android/ZaloPay_Android_8.25.0.apk"
-    style="text-decoration: none"
-  >
-    <div class="cta android">
-      <img
-        src="../images/icons/android.svg"
-        width="32"
-        height="32"
-        style="margin-right: 8px"
-      />
-      <div>
-        <p class="title">8.25.0 Current</p>
-        <p class="subtitle">Latest Features</p>
+    </a>
+  </div>
+  <div align="center">
+    <a
+      href="https://github.com/zalopay-samples/test-wallets/raw/main/android/ZaloPay_Android_8.25.0.apk"
+      style="text-decoration: none"
+    >
+      <div class="cta android">
+        <img
+          src="../images/icons/android.svg"
+          width="32"
+          height="32"
+          style="margin-right: 8px"
+        />
+        <div>
+          <p class="title">8.25.0 Current</p>
+          <p class="subtitle">Latest Features</p>
+        </div>
       </div>
-    </div>
-  </a>
+    </a>
+  </div>
 </div>
 <br />
