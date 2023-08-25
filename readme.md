@@ -15,9 +15,90 @@ This repository contains ZaloPay pre-built binaries for mobile platforms (iOS, A
 
 Click/tap on the following button to install
 
-<iframe src="html/cta.html" width="100%" height="250px" style="background: transparent; border: none;">
-  <p>Your browser does not support iframes.</p>
-</iframe>
+<style>
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta {
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif;
+    color: white;
+    line-height: 24px;
+    padding: 8px 16px;
+    width: fit-content;
+  }
+  .ios {
+    background-color: rgb(142, 142, 147);
+    margin-right: 16px;
+  }
+  .android {
+    background-color: rgb(50, 222, 133);
+  }
+  .title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .subtitle {
+    margin: 0;
+    font-size: 12px;
+  }
+</style>
+
+<br />
+<div class="container">
+  <div align="center">
+    <a
+      href="itms-services://?action=download-manifest&url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/8.25.0/manifest-8.25.0.plist"
+      style="text-decoration: none"
+    >
+      <div class="cta ios">
+        <img
+          src="../images/icons/apple.svg"
+          width="32"
+          height="32"
+          style="margin-right: 8px"
+        />
+        <div>
+          <p class="title">8.25.0 Current</p>
+          <p class="subtitle">Latest Features</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div align="center">
+    <a
+      href="https://github.com/zalopay-samples/test-wallets/raw/main/android/ZaloPay_Android_8.25.0.apk"
+      style="text-decoration: none"
+    >
+      <div class="cta android">
+        <img
+          src="../images/icons/android.svg"
+          width="32"
+          height="32"
+          style="margin-right: 8px"
+        />
+        <div>
+          <p class="title">8.25.0 Current</p>
+          <p class="subtitle">Latest Features</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<br />
+
 
 Other downloads:
 
