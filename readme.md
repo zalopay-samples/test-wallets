@@ -111,7 +111,7 @@ Other downloads:
 | Platform | ZaloPay Version | Updated Date | Download URL |
 | -------- | --------------- | ------------ | ------------ |
 | iOS      | 8.27.0          | 25/09/2023   | [ZaloPay_iOS_8.27.0.ipa](itms-services://?action=download-manifest&url=https://github.com/zalopay-internal-tools/test-wallets/raw/main/ios/8.27.0/manifest-8.27.0.plist) |
-| Android  | 8.27.0          | 25/09/2023   | [ZaloPay_iOS_8.27.0.apk](https://github.com/zalopay-internal-tools/test-wallets/raw/main/android/ZaloPay_Android_8.27.0.apk) |
+| Android  | 8.27.0          | 25/09/2023   | [ZaloPay_Android_8.27.0.apk](https://github.com/zalopay-internal-tools/test-wallets/raw/main/android/ZaloPay_Android_8.27.0.apk) |
 
 For iOS, once the installation is successful, you should trust ZaloPay app via settings in  `Device Management`
 
