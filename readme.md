@@ -66,7 +66,7 @@ Click/tap on the following button to install
 <div class="container">
   <div align="center">
     <a
-      href="itms-services://?action=download-manifest&url=https://github.com/zalopay-samples/test-wallets-extra/raw/main/ios/8.28.0/manifest-8.28.0.plist"
+      href="itms-services://?action=download-manifest&url=https://github.com/zalopay-internal-tools/test-wallets/raw/main/ios/8.28.0/manifest-8.28.0.plist"
       style="text-decoration: none"
     >
       <div class="cta ios">
@@ -85,7 +85,7 @@ Click/tap on the following button to install
   </div>
   <div align="center">
     <a
-      href="https://github.com/zalopay-samples/test-wallets-extra/raw/main/android/ZaloPay_Android_8.28.0.apk"
+      href="https://github.com/zalopay-internal-tools/test-wallets/raw/main/android/ZaloPay_Android_8.28.0.apk"
       style="text-decoration: none"
     >
       <div class="cta android">
@@ -110,17 +110,8 @@ Other downloads:
 
 | Platform | ZaloPay Version | Updated Date | Download URL |
 | -------- | --------------- | ------------ | ------------ |
-| iOS      | 8.27.0          | 25/09/2023   | [ZaloPay_iOS_8.27.0.ipa](itms-services://?action=download-manifest&url=https://github.com/zalopay-samples/test-wallets-extra/raw/main/ios/8.27.0/manifest-8.27.0.plist) |
-| Android  | 8.27.0          | 25/09/2023   | [ZaloPay_iOS_8.27.0.apk](https://github.com/zalopay-samples/test-wallets-extra/raw/main/android/ZaloPay_Android_8.27.0.apk) |
-| iOS      | 8.26.2          | 19/09/2023   | [ZaloPay_iOS_8.26.2.ipa](itms-services://?action=download-manifest&url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/8.26.2/manifest-8.26.2.plist) |
-| iOS      | 8.26.1          | 14/09/2023   | [ZaloPay_iOS_8.26.1.ipa](itms-services://?action=download-manifest&url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/8.26.1/manifest-8.26.1.plist) |
-| Android  | 8.26.1          | 19/09/2023   | [ZaloPay_iOS_8.26.1.apk](https://github.com/zalopay-samples/test-wallets/raw/main/android/ZaloPay_Android_8.26.1.apk) |
-| iOS      | 8.26.0          | 14/09/2023   | [ZaloPay_iOS_8.26.0.ipa](itms-services://?action=download-manifest&url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/8.26.0/manifest-8.26.0.plist) |
-| Android  | 8.26.0          | 19/09/2023   | [ZaloPay_iOS_8.26.0.apk](https://github.com/zalopay-samples/test-wallets/raw/main/android/ZaloPay_Android_8.26.0.apk) |
-| iOS      | 8.25.0          | 05/09/2023   | [ZaloPay_iOS_8.25.0.ipa](itms-services://?action=download-manifest&url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/8.25.0/manifest-8.25.0.plist) |
-| Android  | 8.25.0          | 05/09/2023   | [ZaloPay_Android_8.25.0.apk](https://github.com/zalopay-samples/test-wallets/raw/main/android/ZaloPay_Android_8.25.0.apk) |
-| iOS      | 7.23.0          | 03/10/2022   | [ZaloPay_iOS_7.23.0.ipa](itms-services://?action=download-manifest&url=https://github.com/zalopay-samples/test-wallets/raw/main/ios/7.23.0/manifest-7.23.0.plist) |
-| Android  | 7.20.0          | 03/10/2022   | [ZaloPay_Android_7.20.0.apk](https://github.com/zalopay-samples/test-wallets/raw/main/android/ZaloPay_Android_7.20.0.apk) |
+| iOS      | 8.27.0          | 25/09/2023   | [ZaloPay_iOS_8.27.0.ipa](itms-services://?action=download-manifest&url=https://github.com/zalopay-internal-tools/test-wallets/raw/main/ios/8.27.0/manifest-8.27.0.plist) |
+| Android  | 8.27.0          | 25/09/2023   | [ZaloPay_iOS_8.27.0.apk](https://github.com/zalopay-internal-tools/test-wallets/raw/main/android/ZaloPay_Android_8.27.0.apk) |
 
 For iOS, once the installation is successful, you should trust ZaloPay app via settings in  `Device Management`
 
